@@ -1,0 +1,13 @@
+﻿{
+  "name": "Warning",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "An extension warn you about phising URL",
+  "action": {
+    "default_title": "Use me!",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "32": "LOGO-L.png"
+    }
+  }
+}
