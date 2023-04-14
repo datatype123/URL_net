@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset = "UTF 8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> URLnet </title>
+    <link rel="stylesheet" href="style.css">
+      
+</head> 
+<body>
+    <h1> URLnet</h1><br><br>
+    
+    <div class="Search">
+
+        <input type="text" placeholder="Check URL here">   <br>
+  
+        <button type="submit" onclick="openPopup()"><img src="LOGO-L.png"></button>
+    </div>
+        <div class="popup" id="popup">
+            <div class="dong_ho">
+            <svg width="160px" height="160px">
+                <circle cx="80" cy="80" r="70"></circle>
+                <circle cx="80" cy="80" r="70"></circle>
+            </svg>
+            <div class="number">
+                    <h2>90<span>%</span></h2>
+            </div>
+            </div>
+            <button type="button" onclick="closePopup()"> ok </button>
+         </div>
+        <!--<section>
+            <img src="/URLnet/img/123-01.png">
+         </section>-->
+         
+   
+    <script>
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
