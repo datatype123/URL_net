@@ -184,6 +184,7 @@ h3{
     text-align: center;
     padding-top: 50px;
 }
+
 .campus a{
     color: #000000;
     text-decoration: none;
@@ -193,6 +194,7 @@ h3{
 .campus a:hover{
     color: blue;
 }
+
 .campus-col{
     flex-basis: 32%;
     border-radius: 10px;
