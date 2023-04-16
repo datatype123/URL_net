@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+  <head> 
+    <meta charset = "UTF 8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> URLnet </title>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <a href="https://vuthiminhthu2004.github.io/About-Us/?fbclid=IwAR0zhLQthiUN0Ioa0mgdKZSzopZ-dDZiGV-xjDCIWtt9YrQ_SlVXRy3tNPg" target="_blank" title="About Us"><img src="LOGO_UR.png" alt="URLnet"></a>
+  
+    <div class="container">
+        <div id="site-name">Site Name: HERE</div>
+      <div id="circle-container" style="display: flex; justify-content: center; margin-top: 15px" >
+            <div id="circle">
+              <div class="phishing-percent" style="font-size: 20px">0%</div> 
+            </div>
+      </div>
+      <div id="result">
+        <p> THIS WEB IS SAFE</p>
+      </div>
+      <div id="detail">
+        <a href="detail.html">
+          <b>See more</b>
+        </a>
+      </div>
+    </div>
+    <img src="demo-023.png">
+    <script src="popup.js"></script>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"></script>
+
+
+    <div class="popover">
+        <div class="popover-content">
+          <a href="https://vuthiminhthu2004.github.io/About-Us/?fbclid=IwAR0zhLQthiUN0Ioa0mgdKZSzopZ-dDZiGV-xjDCIWtt9YrQ_SlVXRy3tNPg" target="_blank" title="About Us"><img src="LOGO_UR.png" alt="URLnet"></a>
+            <div class="container2">
+              <div id="result2">
+                <p> THIS WEB IS SAFE</p>
+              </div>
+            </div>
+        </div>
+    </div>
+   <script>
+    document.addEventListener("mouseup", function(event) {
+        var selection = window.getSelection().toString().trim();
+        if (selection !== "") {
+            showPopover(event.clientX, event.clientY);
+        } else {
+            hidePopover();
+        }
+    });
+
+    function showPopover(x, y) {
+        var popover = document.querySelector(".popover");
+        popover.style.left = x + "px";
+        popover.style.top = y + "px";
+        popover.style.display = "block";
+    }
+
+    function hidePopover() {
+        var popover = document.querySelector(".popover");
+        popover.style.display = "none";
+    }
+      
+
+</script>
+
+</body>
